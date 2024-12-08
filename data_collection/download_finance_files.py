@@ -86,31 +86,14 @@ class PDF_COLLECTOR:
 
     def save_full_html(self, driver, filename):
         try:
-            WebDriverWait(driver, 30).until(
-                lambda d: d.execute_script('return document.readyState') == 'complete'
-            )
-            iframe = WebDriverWait(driver, 30).until(
-                EC.presence_of_element_located((By.ID, 'ixvFrame'))
-            )
-            driver.switch_to.frame(iframe)
-            WebDriverWait(driver, 30).until(
-                lambda d: d.execute_script('return document.readyState') == 'complete'
-            )
-            time.sleep(5)
-            iframe_html_content = driver.execute_script("""
-                return document.documentElement.outerHTML;
-            """)
-            driver.switch_to.default_content()
-            self.html_to_pdf(iframe_html_content, filename)
+            self.html_to_pdf(driver.page_source, filename)
         except Exception as e:
             print(f"Error saving HTML files: {e}")
 
     def download_page_and_save_full_html(self, driver, url, filename):
         try:
             driver.get(url)
-            WebDriverWait(driver, 30).until(
-                lambda d: d.execute_script('return document.readyState') == 'complete'
-            )
+            time.sleep(2)
             self.save_full_html(driver, filename)
         except Exception as e:
             print(f"Error during download process for {url}: {e}")

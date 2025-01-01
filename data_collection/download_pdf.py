@@ -1,5 +1,4 @@
 import time
-
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
@@ -33,7 +32,7 @@ class PDF_COLLECTOR:
         options.add_argument("--disable-blink-features=AutomationControlled")
         options.add_argument("--print-to-pdf")
 
-        chromedriver_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'chromedriver.exe')
+        chromedriver_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), '../chromedriver.exe')
         service = Service(executable_path=chromedriver_path)
         return webdriver.Chrome(service=service, options=options)
 

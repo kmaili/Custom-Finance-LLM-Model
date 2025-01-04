@@ -1,68 +1,77 @@
-def tokenize_text(text):
-    """
-    Tokenizes the text into individual words.
-
-    :param text: Cleaned text
-    :return: List of tokens
-    """
-    return text.split()
+from nltk.stem import SnowballStemmer, WordNetLemmatizer
+from nltk.corpus import stopwords
+from nltk.tokenize import word_tokenize
+import nltk
 
 
-def remove_stopwords(tokens, stopwords):
-    """
-    Removes stopwords from a list of tokens.
 
-    :param tokens: List of tokens
-    :param stopwords: List of stopwords
-    :return: Tokens without stopwords
-    """
-    return [token for token in tokens if token.lower() not in stopwords]
+class DataPreprocessor:
+    def __init__(self, language="english"):
+        """
+        Initializes the DataPreprocessor with a language for stopwords and stemmer/lemmatizer.
 
+        :param language: Language for stopwords and stemmer (default: "english")
+        """
+        nltk.download("punkt_tab")
+        nltk.download("stopwords")
+        nltk.download("wordnet")
 
-def stem_tokens(tokens, stemmer):
-    """
-    Applies stemming to tokens.
-
-    :param tokens: List of tokens
-    :param stemmer: A stemmer instance (e.g., from NLTK or SnowballStemmer)
-    :return: Stemmed tokens
-    """
-    return [stemmer.stem(token) for token in tokens]
+        self.stopwords = set(stopwords.words(language))
+        self.stemmer = SnowballStemmer(language)
+        self.lemmatizer = WordNetLemmatizer()
 
 
-def lemmatize_tokens(tokens, lemmatizer):
-    """
-    Applies lemmatization to tokens.
+    def preprocess(self, text, remove_stopwords=True, stem=False, lemmatize=False):
+        """
+        Preprocesses plain text by optionally removing stopwords, stemming, or lemmatizing.
 
-    :param tokens: List of tokens
-    :param lemmatizer: A lemmatizer instance (e.g., WordNetLemmatizer)
-    :return: Lemmatized tokens
-    """
-    return [lemmatizer.lemmatize(token) for token in tokens]
+        :param text: Plain text to preprocess
+        :param remove_stopwords: Whether to remove stopwords (default: True)
+        :param stem: Whether to apply stemming (default: False)
+        :param lemmatize: Whether to apply lemmatization (default: False)
+        :return: Preprocessed plain text
+        """
+        if stem and lemmatize:
+            raise ValueError("Cannot apply both stemming and lemmatization. Choose one.")
 
+        # Tokenize the input text
+        tokens = word_tokenize(text)
 
-'''
-def preprocess_data(cleaned_text, stopwords, stemmer=None, lemmatizer=None):
-    """
-    Preprocesses cleaned text by tokenizing, removing stopwords, and applying stemming/lemmatization.
+        # Apply preprocessing steps
+        if remove_stopwords:
+            tokens = self.__remove_stopwords(tokens)
+        if stem:
+            tokens = self.__stem_tokens(tokens)
+        if lemmatize:
+            tokens = self.__lemmatize_tokens(tokens)
 
-    :param cleaned_text: Text after cleaning
-    :param stopwords: List of stopwords
-    :param stemmer: Optional stemmer instance
-    :param lemmatizer: Optional lemmatizer instance
-    :return: Processed tokens
-    """
-    # Step 1: Tokenize text
-    tokens = tokenize_text(cleaned_text)
+        # Join tokens back into plain text
+        cleaned_text = " ".join(tokens)
+        return cleaned_text
 
-    # Step 2: Remove stopwords
-    tokens = remove_stopwords(tokens, stopwords)
+    def __remove_stopwords(self, tokens):
+        """
+        Removes stopwords from a list of tokens.
 
-    # Step 3: Apply stemming or lemmatization
-    if stemmer:
-        tokens = stem_tokens(tokens, stemmer)
-    elif lemmatizer:
-        tokens = lemmatize_tokens(tokens, lemmatizer)
+        :param tokens: List of tokens
+        :return: Tokens without stopwords
+        """
+        return [token for token in tokens if token.lower() not in self.stopwords]
 
-    return tokens
-'''
+    def __stem_tokens(self, tokens):
+        """
+        Applies stemming to tokens.
+
+        :param tokens: List of tokens
+        :return: Stemmed tokens
+        """
+        return [self.stemmer.stem(token) for token in tokens]
+
+    def __lemmatize_tokens(self, tokens):
+        """
+        Applies lemmatization to tokens.
+
+        :param tokens: List of tokens
+        :return: Lemmatized tokens
+        """
+        return [self.lemmatizer.lemmatize(token) for token in tokens]

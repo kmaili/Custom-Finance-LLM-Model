@@ -1,0 +1,1 @@
+Ces fichiers PDF sont des rapports financiers 10-K convertis à partir de pages HTML du site EDGAR, qui ne permet pas de télécharger ces fichiers directement en format PDF.

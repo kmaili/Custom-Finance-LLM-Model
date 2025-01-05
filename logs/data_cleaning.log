@@ -357,3 +357,87 @@
 2025-01-04 20:50:25 - INFO - Fichier PDF traité avec succès : PDFs/file_9.pdf
 2025-01-04 20:50:25 - INFO - Fichier PDF traité avec succès : PDFs/file_9.pdf
 2025-01-04 20:50:25 - INFO - Fichier PDF traité avec succès : PDFs/file_9.pdf
+2025-01-04 20:54:12 - INFO - PyTorch version 2.5.1 available.
+2025-01-04 20:54:12 - INFO - PyTorch version 2.5.1 available.
+2025-01-04 20:54:12 - INFO - PyTorch version 2.5.1 available.
+2025-01-04 20:54:12 - INFO - PyTorch version 2.5.1 available.
+2025-01-04 23:05:49 - INFO - Traitement du fichier PDF : PDFs/file_0.pdf
+2025-01-04 23:05:49 - INFO - Extraction du texte sans les tables pour le fichier : PDFs/file_0.pdf
+2025-01-04 23:06:20 - INFO - Texte extrait avec succès pour le fichier : PDFs/file_0.pdf
+2025-01-04 23:06:20 - INFO - Suppression des en-têtes et pieds de page
+2025-01-04 23:06:20 - INFO - Normalisation des espaces blancs
+2025-01-04 23:06:20 - INFO - Réparation des lignes cassées
+2025-01-04 23:06:20 - INFO - Suppression des phrases redondantes
+2025-01-04 23:06:20 - INFO - Fichier PDF traité avec succès : PDFs/file_0.pdf
+2025-01-04 23:06:20 - INFO - Traitement du fichier PDF : PDFs/file_1.pdf
+2025-01-04 23:06:20 - INFO - Extraction du texte sans les tables pour le fichier : PDFs/file_1.pdf
+2025-01-04 23:07:02 - INFO - Texte extrait avec succès pour le fichier : PDFs/file_1.pdf
+2025-01-04 23:07:02 - INFO - Suppression des en-têtes et pieds de page
+2025-01-04 23:07:02 - INFO - Normalisation des espaces blancs
+2025-01-04 23:07:02 - INFO - Réparation des lignes cassées
+2025-01-04 23:07:02 - INFO - Suppression des phrases redondantes
+2025-01-04 23:07:02 - INFO - Fichier PDF traité avec succès : PDFs/file_1.pdf
+2025-01-04 23:07:02 - INFO - Traitement du fichier PDF : PDFs/file_2.pdf
+2025-01-04 23:07:02 - INFO - Extraction du texte sans les tables pour le fichier : PDFs/file_2.pdf
+2025-01-04 23:07:52 - INFO - Texte extrait avec succès pour le fichier : PDFs/file_2.pdf
+2025-01-04 23:07:52 - INFO - Suppression des en-têtes et pieds de page
+2025-01-04 23:07:52 - INFO - Normalisation des espaces blancs
+2025-01-04 23:07:52 - INFO - Réparation des lignes cassées
+2025-01-04 23:07:52 - INFO - Suppression des phrases redondantes
+2025-01-04 23:07:52 - INFO - Fichier PDF traité avec succès : PDFs/file_2.pdf
+2025-01-04 23:07:52 - INFO - Traitement du fichier PDF : PDFs/file_3.pdf
+2025-01-04 23:07:52 - INFO - Extraction du texte sans les tables pour le fichier : PDFs/file_3.pdf
+2025-01-04 23:08:48 - INFO - Texte extrait avec succès pour le fichier : PDFs/file_3.pdf
+2025-01-04 23:08:48 - INFO - Suppression des en-têtes et pieds de page
+2025-01-04 23:08:48 - INFO - Normalisation des espaces blancs
+2025-01-04 23:08:48 - INFO - Réparation des lignes cassées
+2025-01-04 23:08:48 - INFO - Suppression des phrases redondantes
+2025-01-04 23:08:48 - INFO - Fichier PDF traité avec succès : PDFs/file_3.pdf
+2025-01-04 23:08:48 - INFO - Traitement du fichier PDF : PDFs/file_4.pdf
+2025-01-04 23:08:48 - INFO - Extraction du texte sans les tables pour le fichier : PDFs/file_4.pdf
+2025-01-04 23:09:54 - INFO - Texte extrait avec succès pour le fichier : PDFs/file_4.pdf
+2025-01-04 23:09:54 - INFO - Suppression des en-têtes et pieds de page
+2025-01-04 23:09:54 - INFO - Normalisation des espaces blancs
+2025-01-04 23:09:54 - INFO - Réparation des lignes cassées
+2025-01-04 23:09:54 - INFO - Suppression des phrases redondantes
+2025-01-04 23:09:54 - INFO - Fichier PDF traité avec succès : PDFs/file_4.pdf
+2025-01-04 23:09:54 - INFO - Traitement du fichier PDF : PDFs/file_5.pdf
+2025-01-04 23:09:54 - INFO - Extraction du texte sans les tables pour le fichier : PDFs/file_5.pdf
+2025-01-04 23:10:39 - INFO - Texte extrait avec succès pour le fichier : PDFs/file_5.pdf
+2025-01-04 23:10:39 - INFO - Suppression des en-têtes et pieds de page
+2025-01-04 23:10:39 - INFO - Normalisation des espaces blancs
+2025-01-04 23:10:39 - INFO - Réparation des lignes cassées
+2025-01-04 23:10:39 - INFO - Suppression des phrases redondantes
+2025-01-04 23:10:39 - INFO - Fichier PDF traité avec succès : PDFs/file_5.pdf
+2025-01-04 23:10:39 - INFO - Traitement du fichier PDF : PDFs/file_6.pdf
+2025-01-04 23:10:39 - INFO - Extraction du texte sans les tables pour le fichier : PDFs/file_6.pdf
+2025-01-04 23:11:57 - INFO - Texte extrait avec succès pour le fichier : PDFs/file_6.pdf
+2025-01-04 23:11:57 - INFO - Suppression des en-têtes et pieds de page
+2025-01-04 23:11:57 - INFO - Normalisation des espaces blancs
+2025-01-04 23:11:57 - INFO - Réparation des lignes cassées
+2025-01-04 23:11:57 - INFO - Suppression des phrases redondantes
+2025-01-04 23:11:57 - INFO - Fichier PDF traité avec succès : PDFs/file_6.pdf
+2025-01-04 23:11:57 - INFO - Traitement du fichier PDF : PDFs/file_7.pdf
+2025-01-04 23:11:57 - INFO - Extraction du texte sans les tables pour le fichier : PDFs/file_7.pdf
+2025-01-04 23:12:54 - INFO - Texte extrait avec succès pour le fichier : PDFs/file_7.pdf
+2025-01-04 23:12:54 - INFO - Suppression des en-têtes et pieds de page
+2025-01-04 23:12:54 - INFO - Normalisation des espaces blancs
+2025-01-04 23:12:54 - INFO - Réparation des lignes cassées
+2025-01-04 23:12:54 - INFO - Suppression des phrases redondantes
+2025-01-04 23:12:54 - INFO - Fichier PDF traité avec succès : PDFs/file_7.pdf
+2025-01-04 23:12:54 - INFO - Traitement du fichier PDF : PDFs/file_8.pdf
+2025-01-04 23:12:54 - INFO - Extraction du texte sans les tables pour le fichier : PDFs/file_8.pdf
+2025-01-04 23:13:50 - INFO - Texte extrait avec succès pour le fichier : PDFs/file_8.pdf
+2025-01-04 23:13:50 - INFO - Suppression des en-têtes et pieds de page
+2025-01-04 23:13:50 - INFO - Normalisation des espaces blancs
+2025-01-04 23:13:50 - INFO - Réparation des lignes cassées
+2025-01-04 23:13:50 - INFO - Suppression des phrases redondantes
+2025-01-04 23:13:50 - INFO - Fichier PDF traité avec succès : PDFs/file_8.pdf
+2025-01-04 23:13:50 - INFO - Traitement du fichier PDF : PDFs/file_9.pdf
+2025-01-04 23:13:50 - INFO - Extraction du texte sans les tables pour le fichier : PDFs/file_9.pdf
+2025-01-04 23:15:12 - INFO - Texte extrait avec succès pour le fichier : PDFs/file_9.pdf
+2025-01-04 23:15:12 - INFO - Suppression des en-têtes et pieds de page
+2025-01-04 23:15:12 - INFO - Normalisation des espaces blancs
+2025-01-04 23:15:12 - INFO - Réparation des lignes cassées
+2025-01-04 23:15:12 - INFO - Suppression des phrases redondantes
+2025-01-04 23:15:12 - INFO - Fichier PDF traité avec succès : PDFs/file_9.pdf
